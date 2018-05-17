@@ -1,0 +1,15 @@
+.character {
+	background: url( "../images/nana_01.png");
+	background-size: contain;
+	min-height: rem-calc( 600 );
+	background-repeat: no-repeat;
+	background-position: center;
+
+	&:hover {
+		background: url( "../images/nana_02.png"), url( "../images/nana_01.png");
+		background-size: contain;
+		min-height: rem-calc( 600 );
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+}

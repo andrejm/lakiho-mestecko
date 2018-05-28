@@ -1,3 +1,4 @@
+'use strict';jQuery(document).ready(function($){var character='.js-character',activeClass='character-active',clickedClass='character-clicked';$(character).on('click',function(){var $this=$(this);$this.toggleClass(activeClass);$this.addClass(clickedClass);});});
 'use strict';jQuery(document).ready(function($){// Select all links with hashes
 $('a[href*="#"]')// Remove links that don't actually link to anything
 .not('[href="#"]').not('[href="#0"]').click(function(event){// On-page links

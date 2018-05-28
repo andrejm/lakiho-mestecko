@@ -1,15 +1,49 @@
 .character {
-	background: url( "../images/nana_01.png");
 	background-size: contain;
-	min-height: rem-calc( 600 );
 	background-repeat: no-repeat;
 	background-position: center;
+	position: relative;
+	cursor: pointer;
 
-	&:hover {
-		background: url( "../images/nana_02.png"), url( "../images/nana_01.png");
+	&.character-active {
 		background-size: contain;
-		min-height: rem-calc( 600 );
 		background-repeat: no-repeat;
 		background-position: center;
+	}
+
+	&--01 {
+		background-image: url( "../images/character-01.jpg");
+		min-height: rem-calc( 600 );
+
+		&.character-active {
+			background-image: url( "../images/character-01-active.png"), url( "../images/character-01.jpg");
+		}
+	}
+
+	&--02 {
+		background-image: url( "../images/character-02.jpg");
+		min-height: rem-calc( 600 );
+
+		&.character-active {
+			background-image: url( "../images/character-02-active.png"), url( "../images/character-02.jpg");
+		}
+	}
+
+	&--03 {
+		background-image: url( "../images/character-03.jpg");
+		background-position: center bottom;
+		min-height: rem-calc( 600 );
+
+		&.character-active {
+			background-image: url( "../images/character-03-active.png"), url( "../images/character-03.jpg");
+			background-position: center bottom;
+		}
+	}
+
+
+	&.character-clicked {
+		.pulsating-circle {
+			display: none;
+		}
 	}
 }

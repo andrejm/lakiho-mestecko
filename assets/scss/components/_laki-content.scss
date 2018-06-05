@@ -2,4 +2,11 @@
 	// z-index: 1;
 	position: relative;
     background-color: white;
+
+    p, ul {
+    	@include breakpoint( medium ) {
+    		width: 80%;
+    		font-size: rem-calc( 18 );
+    	}
+    }
 }

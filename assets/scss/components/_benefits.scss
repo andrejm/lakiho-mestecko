@@ -1,0 +1,17 @@
+.benefits {
+	@include reset-list;
+
+	&__item {
+		display: flex;
+		flex-flow: row, nowrap;
+		margin-bottom: rem-calc( 16 );
+
+		&::before {
+			content: url('../images/tapka.gif');
+			display: block;
+			width: 28px;
+			height: 29px;
+			margin-right: 15px;
+		}
+	}
+}

@@ -506,7 +506,7 @@ body {
   margin: 0;
   padding: 0;
   background: #fefefe;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "PT Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-weight: normal;
   line-height: 1.5;
   color: #0a0a0a;
@@ -2853,7 +2853,7 @@ h3, .h3,
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Caveat Brush", "PT Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   color: inherit;
@@ -7554,6 +7554,31 @@ a.thumbnail image {
     - usually one rule per class
     - E.g. margin on a button or a text
    ========================================================================== */
+.benefits {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.benefits__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row, nowrap;
+          flex-flow: row, nowrap;
+  margin-bottom: 1rem;
+}
+
+.benefits__item::before {
+  content: url("../images/tapka.gif");
+  display: block;
+  width: 28px;
+  height: 29px;
+  margin-right: 15px;
+}
+
 .character {
   background-size: contain;
   background-repeat: no-repeat;
@@ -7601,8 +7626,14 @@ a.thumbnail image {
   display: none;
 }
 
+.cta-text {
+  margin: 1.25rem;
+}
+
 .footer {
-  background-color: #01a4e9;
+  background-color: #daedf3;
+  padding: 1.25rem 0;
+  position: relative;
 }
 
 .laki-content {
@@ -7610,10 +7641,19 @@ a.thumbnail image {
   background-color: white;
 }
 
+@media print, screen and (min-width: 40em) {
+  .laki-content p, .laki-content ul {
+    width: 80%;
+    font-size: 1.125rem;
+  }
+}
+
 .laki-title {
   width: 100%;
   min-height: 95vh;
   position: relative;
+  background: white url("../images/kalvaria_crop.jpg") no-repeat center;
+  background-size: cover;
 }
 
 .laki-title__intro {
@@ -7621,8 +7661,15 @@ a.thumbnail image {
   width: 100%;
 }
 
+@media print, screen and (min-width: 40em) {
+  .laki-title__intro {
+    top: 8%;
+  }
+}
+
 .laki-title__title {
   text-align: center;
+  background-size: cover;
 }
 
 .laki-title__subtitle {
@@ -7736,6 +7783,25 @@ a.thumbnail image {
     -webkit-transform: scale(0.8);
             transform: scale(0.8);
   }
+}
+
+.signup-form {
+  background-color: #f4e18f;
+}
+
+@media print, screen and (min-width: 40em) {
+  .signup-form {
+    padding: 25px;
+  }
+}
+
+.signup-form .signup-form__notice {
+  font-size: 0.75rem;
+  padding: 0 0.9375rem;
+}
+
+.signup-form #mc_embed_signup {
+  background-color: #f4e18f;
 }
 
 .textpart {

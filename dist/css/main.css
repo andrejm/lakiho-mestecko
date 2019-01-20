@@ -7687,6 +7687,12 @@ a.thumbnail image {
   background-position: 50% 100px;
 }
 
+@media screen and (min-width: 75em) {
+  .laki-title__image {
+    background-size: cover;
+  }
+}
+
 /* Credits: https://codepen.io/peeke/pen/BjxXZa */
 .pulsating-circle {
   position: absolute;

@@ -38,5 +38,9 @@
 		background: transparent url("../images/lakiho-mestecko-mapa.png") bottom center no-repeat;
 		// background-size: cover;
 		background-position: 50% 100px;
+
+		@include breakpoint( xlarge ) {
+			background-size: cover;
+		}
 	}
 }

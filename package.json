@@ -6,7 +6,7 @@
   "devDependencies": {
     "babel-preset-es2015": "^6.9.0",
     "foundation-sites": "6.4.*",
-    "gulp": "latest",
+    "gulp": "^3.8",
     "gulp-autoprefixer": "latest",
     "gulp-babel": "^6.1.2",
     "gulp-concat": "latest",
@@ -24,6 +24,7 @@
     "motion-ui": "latest"
   },
   "dependencies": {
-    "browser-sync": "^2.5.2"
+    "browser-sync": "^2.5.2",
+    "natives": "^1.1.6"
   }
 }
